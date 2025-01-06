@@ -31,16 +31,16 @@ public class App {
                 new Dog(), new Dog(), new Dog(),
         };
 
-        for (int i = 0; i < animals.length; ++i) {
-            if (animals[i] instanceof Cat) {
+        for (Animals animal : animals) {
+            if (animal instanceof Cat) {
                 ++countCat;
-            } else if (animals[i] instanceof Dog) {
-                ++countDog;
+            } else if (animal instanceof Dog) {
+                countDog++;
             } else {
-                ++countTiger;
+                countTiger++;
             }
-            animals[i].run(100);
-            animals[i].swim(100);
+            animal.run(100);
+            animal.swim(100);
         }
 
         System.out.println("Всего кошек/котов: "+ countCat);
