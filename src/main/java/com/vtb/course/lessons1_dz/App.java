@@ -20,11 +20,6 @@ public class App {
         cat.run(200);
         cat.swim(200);
 
-
-        int countDog = 0;
-        int countCat = 0;
-        int countTiger = 0;
-
         Animals[] animals = new Animals[]{
                 new Dog(), new Cat(), new Tiger(),
                 new Dog(), new Cat(), new Tiger(),
@@ -32,20 +27,12 @@ public class App {
         };
 
         for (Animals animal : animals) {
-            if (animal instanceof Cat) {
-                ++countCat;
-            } else if (animal instanceof Dog) {
-                countDog++;
-            } else {
-                countTiger++;
-            }
             animal.run(100);
             animal.swim(100);
         }
 
-        System.out.println("Всего кошек/котов: "+ countCat);
-        System.out.println("Всего собак: "+ countDog);
-        System.out.println("Всего тигров: "+ countTiger);
-
+        System.out.println("Всего кошек/котов: " + Cat.count);
+        System.out.println("Всего собак: " + Dog.count);
+        System.out.println("Всего тигров: " + Tiger.count);
     }
 }

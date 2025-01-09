@@ -1,6 +1,12 @@
 package com.vtb.course.lessons1_dz.animals;
 
 public final class Cat extends Animals {
+    public static int count;
+
+    public Cat() {
+        count++;
+    }
+
     @Override
     public void run(int range) {
         if (range > 0 && range <= 200)
