@@ -1,9 +1,9 @@
 package com.vtb.course.lessons2_dz.impl;
 
 import com.vtb.course.lessons2_dz.Contestant;
-import com.vtb.course.lessons2_dz.Obstacles;
+import com.vtb.course.lessons2_dz.Obstacle;
 
-public final class Wall implements Obstacles {
+public final class Wall implements Obstacle {
 	private int height;
 
 	public Wall(int height) {

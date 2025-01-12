@@ -1,5 +1,5 @@
 package com.vtb.course.lessons2_dz;
 
-public interface Obstacles {
+public interface Obstacle {
 	public boolean contest(Contestant contestant);
 }

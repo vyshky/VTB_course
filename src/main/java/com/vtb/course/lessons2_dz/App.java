@@ -4,7 +4,7 @@ import com.vtb.course.lessons2_dz.impl.*;
 
 public class App {
 	public static void main(String[] args) {
-		Obstacles[] obstacles = new Obstacles[]{
+		Obstacle[] obstacles = new Obstacle[]{
 				new Wall(3),
 				new Treadmill(10),
 				new Wall(11)
@@ -17,10 +17,8 @@ public class App {
 		};
 
 		for (Contestant contestant: contestants ){
-			for (int i=0; i!= obstacles.length; ++i){
-				if (!obstacles[i].contest(contestant)){
-					break;
-				}
+			for(Obstacle obstacle:obstacles ){
+				if(!obstacle.contest(contestant)) break;
 			}
 		}
 	}

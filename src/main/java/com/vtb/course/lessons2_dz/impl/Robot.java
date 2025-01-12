@@ -1,7 +1,6 @@
 package com.vtb.course.lessons2_dz.impl;
 
 import com.vtb.course.lessons2_dz.Contestant;
-import com.vtb.course.lessons2_dz.Obstacles;
 
 public final class Robot implements Contestant {
 	private final int maxDistance;

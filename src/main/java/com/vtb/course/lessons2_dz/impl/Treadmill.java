@@ -1,9 +1,9 @@
 package com.vtb.course.lessons2_dz.impl;
 
 import com.vtb.course.lessons2_dz.Contestant;
-import com.vtb.course.lessons2_dz.Obstacles;
+import com.vtb.course.lessons2_dz.Obstacle;
 
-public final class Treadmill implements Obstacles {
+public final class Treadmill implements Obstacle {
 	private int distance;
 
 	public Treadmill(int distance) {
