@@ -1,6 +1,9 @@
 package com.vtb.course.lessons2_dz.impl;
 
-public final class Treadmill {
+import com.vtb.course.lessons2_dz.Contestant;
+import com.vtb.course.lessons2_dz.Obstacles;
+
+public final class Treadmill implements Obstacles {
 	private int distance;
 
 	public Treadmill(int distance) {
@@ -13,5 +16,10 @@ public final class Treadmill {
 
 	public int getDistance() {
 		return distance;
+	}
+
+	@Override
+	public boolean contest(Contestant contestant) {
+		return contestant.run(this);
 	}
 }

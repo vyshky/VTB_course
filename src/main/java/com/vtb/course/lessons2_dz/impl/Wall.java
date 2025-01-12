@@ -1,6 +1,9 @@
 package com.vtb.course.lessons2_dz.impl;
 
-public final class Wall {
+import com.vtb.course.lessons2_dz.Contestant;
+import com.vtb.course.lessons2_dz.Obstacles;
+
+public final class Wall implements Obstacles {
 	private int height;
 
 	public Wall(int height) {
@@ -13,5 +16,10 @@ public final class Wall {
 
 	public int getHeight() {
 		return height;
+	}
+
+	@Override
+	public boolean contest(Contestant contestant) {
+		return contestant.jump(this);
 	}
 }

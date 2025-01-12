@@ -1,8 +1,9 @@
 package com.vtb.course.lessons2_dz.impl;
 
-import com.vtb.course.lessons2_dz.RunJmp;
+import com.vtb.course.lessons2_dz.Contestant;
+import com.vtb.course.lessons2_dz.Obstacles;
 
-public final class Robot implements RunJmp {
+public final class Robot implements Contestant {
 	private final int maxDistance;
 	private final int maxJmp;
 
@@ -34,5 +35,4 @@ public final class Robot implements RunJmp {
 		}
 		return false;
 	}
-
 }

@@ -1,8 +1,8 @@
 package com.vtb.course.lessons2_dz.impl;
 
-import com.vtb.course.lessons2_dz.RunJmp;
+import com.vtb.course.lessons2_dz.Contestant;
 
-public final class Cat implements RunJmp {
+public final class Cat implements Contestant {
 	private final int maxDistance;
 	private final int maxJmp;
 
@@ -13,7 +13,6 @@ public final class Cat implements RunJmp {
 
 	@Override
 	public boolean run(Treadmill treadmill) {
-
 		if (treadmill.getDistance() <= maxDistance && treadmill.getDistance() >= 0) {
 			System.out.println("Кошка бежит");
 			return true;
@@ -26,11 +25,12 @@ public final class Cat implements RunJmp {
 	@Override
 	public boolean jump(Wall wall) {
 		if (wall.getHeight() <= maxJmp && wall.getHeight() >= 0) {
-			System.out.println("Кошка допрыгнул");
+			System.out.println("Кошка допрыгнула");
 			return true;
 		} else {
 			System.out.println("Кошка не допрыгнула");
 		}
 		return false;
 	}
+
 }
