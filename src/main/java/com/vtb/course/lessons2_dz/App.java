@@ -16,8 +16,8 @@ public class App {
 				new Robot(1000, 20),
 		};
 
-		for (Contestant contestant: contestants ){
-			for(Obstacle obstacle:obstacles ){
+		for (Contestant contestant: contestants){
+			for(Obstacle obstacle:obstacles){
 				if(!obstacle.contest(contestant)) break;
 			}
 		}
