@@ -1,4 +1,4 @@
-package com.vtb.course.lessons4_oop.generics;
+package com.vtb.course.lessons4_collection_generic_oop.generics;
 
 import java.util.List;
 

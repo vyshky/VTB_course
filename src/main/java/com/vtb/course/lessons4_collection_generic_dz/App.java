@@ -1,19 +1,20 @@
-package com.vtb.course.lessons4_dz;
+package com.vtb.course.lessons4_collection_generic_dz;
 
-import com.vtb.course.lessons4_dz.classes.Collections;
-import com.vtb.course.lessons4_dz.fuits.Apple;
-import com.vtb.course.lessons4_dz.fuits.Box;
-import com.vtb.course.lessons4_dz.fuits.Fruits;
-import com.vtb.course.lessons4_dz.fuits.Orange;
+import com.vtb.course.lessons4_collection_generic_dz.classes.Collections;
+import com.vtb.course.lessons4_collection_generic_dz.fuits.Apple;
+import com.vtb.course.lessons4_collection_generic_dz.fuits.Box;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class App {
 	public static void main(String[] args) {
 		Collections collections = new Collections();
 
 		// 1
-//		List<String> list = new ArrayList(List.of("apple", "banana", "orange", "dog","cat","home","green"));
-//		collections.regroupElements(list,5,1);
-//		System.out.println(list);
+		List<String> list = new ArrayList(List.of("apple", "banana", "orange", "dog","cat","home","green"));
+		collections.regroupElements(list,5,1);
+		System.out.println(list);
 
 		// 2
 //		Integer[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};

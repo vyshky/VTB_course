@@ -1,4 +1,4 @@
-package com.vtb.course.lessons4_dz.classes;
+package com.vtb.course.lessons4_collection_generic_dz.classes;
 
 import java.util.ArrayList;
 import java.util.List;
